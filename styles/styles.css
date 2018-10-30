@@ -76,4 +76,8 @@ footer a {
     .navbar {
         z-index: 99;
     }
+
+    footer {
+        font-size: 0.8rem;
+    }
 }
