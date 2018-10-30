@@ -65,8 +65,15 @@ footer a {
 }
 
 @media screen and (max-width: 765px) {
+    #hero {
+        padding-bottom: 40rem;
+    }
     #hero h1 {
         font-size: 3rem;
-        margin-top: 9rem;
+        padding-top: 35rem;
+        z-index: 0;
+    }
+    .navbar {
+        z-index: 99;
     }
 }
