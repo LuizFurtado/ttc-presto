@@ -1,0 +1,13 @@
+.bg-primary {
+    background: #3B801C !important;
+    font-weight: bold;
+}
+
+#hero {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url('../assets/fist-bumping-train.jpg') center center no-repeat;
+    background-size: cover;
+    height: 92vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
