@@ -12,7 +12,7 @@
 <body>
     <header>
         <nav class="navbar navbar-dark bg-primary navbar-expand-lg">
-            <a class="navbar-brand" href="#"><img src="assets/TTC-logo.svg-sm.png" alt="Toronto Transit Commission Logo"></a>
+            <a class="navbar-brand" href="#"><img src="assets/Prestologo.jpg" alt="Toronto Transit Commission Logo"> TTC Presto</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -30,6 +30,12 @@
                 <li class="nav-item">
                   <a class="nav-link" href="#how-to">How to Presto</a>
                 </li>
+                <li class="nav-item">
+                        <a class="btn btn-success" href="#" data-toggle="modal" data-target="#loginModal">Sign In</a>
+                </li>
+                <li class="nav-item">
+                        <a class="btn btn-info" href="#" data-toggle="modal" data-target="#loginModal">Sign Up</a>
+                </li>
               </ul>
             </div>
         </nav>
@@ -39,8 +45,8 @@
         <section id="hero">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-7">
-                            <h1 class="display-3">
+                        <div class="col-md-6">
+                            <h1 class="display-4">
                                 TTC Presto
                                 <br>
                                 Tap on. Ride Easy.
@@ -48,10 +54,10 @@
                             <p class="lead">
                                 One card. Eleven transit agencies. It’s payment made easier.
                             </p>
-                            <a href="#" class="btn btn-info btn-lg">Learn More</a>
-                            <a href="#" class="btn btn-success btn-lg">Order Now!</a>
+                            <a href="#" role="button" class="btn btn-outline-info btn-lg">Learn More</a>
+                            <a href="#" role="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#loginModal">Order Now!</a>
                         </div>
-                        <div class="col-md-5">
+                        <div class="col-md-6">
                             <h2>Using your Presto card on TTC</h2>
                             <iframe width="100%" height="315" src="https://www.youtube.com/embed/ipLB08xBELc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                         </div>
@@ -63,6 +69,13 @@
                 <h2 class="display-4">What is Presto?</h2>
                 <p class="lead">
                     Presto is a contactless smart card that the user can load with funds to pay for transit across 11 public transportation systems across the GTA, Ottawa and Hamilton.
+                </p>
+                <p>
+                    Presto provides a new seamless transit experience.
+                    Its fast, convenient, and always online, Presto is the perfect choice for everyday commuters and infrequent transit users alike.    
+                </p>
+                <p>
+                    Presto is a reloadable transit card that works across all major GTA public transportation systems.
                 </p>
         </section>
 
@@ -177,6 +190,69 @@
             <a href="https://www.facebook.com/PRESTOcard/"><img src="assets/if_facebook_circle.svg" alt="Presto Facebook profile"></a>
         </div>
     </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="loginModalLabel"><img src="assets/Prestologo.jpg" alt="Presto logo"> Order your card now!</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <h5>Before order your card, you need either to sign up or sign in</h5>
+              <ul class="nav nav-tabs mb-3" id="nav-tab" role="tablist">
+                    <li class="nav-item">
+                      <a class="nav-link active" id="pills-signIn-tab" data-toggle="pill" href="#pills-signIn" role="tab" aria-controls="pills-signIn" aria-selected="true">Sign In</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="pills-signUp-tab" data-toggle="pill" href="#pills-signUp" role="tab" aria-controls="pills-signUp" aria-selected="false">Sign Up</a>
+                    </li>
+              </ul>
+              <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-signIn" role="tabpanel" aria-labelledby="pills-signIn-tab">
+                        Login with <img src="assets/if_Google_Plus.svg" alt="Google Plus login"> or <img src="assets/if_Facebook.svg" alt="Facebook login">
+                            <br>
+                            or
+                            <br>
+                            Login with your e-mail:
+                            <div class="form-group">
+                                    <label for="emailAddress" class="sr-only">Email address</label>
+                                    <input type="email" class="form-control" id="emailAddress" placeholder="name@example.com">
+                            </div>
+                            <div class="form-group">
+                                    <label for="yourPassword" class="sr-only">Password</label>
+                                    <input type="password" class="form-control" id="yourPassword">
+                            </div>
+                            <button class="btn btn-lg btn-success">Login!</button>
+                    </div>
+                    <div class="tab-pane fade" id="pills-signUp" role="tabpanel" aria-labelledby="pills-signUp-tab">
+                        Sign Up with <img src="assets/if_Google_Plus.svg" alt="Google Plus login"> or <img src="assets/if_Facebook.svg" alt="Facebook login">
+                        <br>
+                        or
+                        <br>
+                        Use your e-mail:
+                        <div class="form-group">
+                                <label for="emailAddress" class="sr-only">Email address</label>
+                                <input type="email" class="form-control" id="emailAddress" placeholder="name@example.com">
+                        </div>
+                        <div class="form-group">
+                                <label for="yourPassword" class="sr-only">Password</label>
+                                <input type="password" class="form-control" id="yourPassword">
+                        </div>
+                        <button class="btn btn-lg btn-success">Sign Up!</button>
+                    </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <!-- <button type="button" class="btn btn-success">Save changes</button> -->
+              <button type="button" class="btn btn-warning" data-dismiss="modal">Cancel</button>
+            </div>
+          </div>
+        </div>
+    </div>
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
