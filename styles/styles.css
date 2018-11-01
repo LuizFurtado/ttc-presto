@@ -91,6 +91,27 @@ div.tab-pane {
     height: 1.5rem;
 }
 
+/**
+*   Learn More styles
+*/
+
+#learn-more p.lead {
+    font-size: 2rem;
+}
+
+.numbering img {
+    width: 100%;
+}
+
+.step-header {
+    text-align: start;
+    line-height: 100%;
+}
+
+.step ul li {
+    margin-bottom: 1rem;
+}
+
 @media screen and (max-width: 765px) {
     .bg-primary a.btn {
         margin-right: 0.5rem;
