@@ -77,6 +77,10 @@ footer a {
     color: #000;
 }
 
+footer small {
+    display: block;
+}
+
 div.modal-header {
     background: #3D8313;
     color: #fff;
