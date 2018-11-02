@@ -79,6 +79,7 @@ footer a {
 
 footer small {
     display: block;
+    margin-top: 1rem;
 }
 
 div.modal-header {
